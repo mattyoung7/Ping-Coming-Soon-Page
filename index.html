@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Outfit:wght@300;400;600&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/4296ce8a89.js" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="container__top">
+      <img class="logo" src="images/logo.svg" alt="logo">
+      <h1 class="title">We are launching <span class="title__bold">soon!</span></h1>
+      <h2 class="cta">Subscribe and get notified</h2>
+      <div class="signup">
+        <div class="signup__email">
+        <input type="email" class="email" id="email" placeholder="Your email address...">
+        <p class="error__hidden" id="error">Please provide a valid email address</p>
+        </div>
+        <button onclick="validate()" type="submit" class="notify">Notify Me</button>
+      </div>
+    </div>
+
+    <div class="container__mid">
+      <img class="illustration" src="images/illustration-dashboard.png" alt="illustration">
+    </div>
+
+    <div class="container__bottom">
+      <div class="socials">
+        <i class="fa-brands fa-circle fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  </div>
+
+  <script src="index.js" async></script>
+</body>
+</html>

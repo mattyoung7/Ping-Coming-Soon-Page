@@ -1,0 +1,231 @@
+:root {
+    /* Primary Colours */
+    --blue: hsl(223, 87%, 63%);
+
+    /* Secondary Colours */
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+
+    /* Neutral Colours */
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container__top {
+    width: 100%;
+    padding: 81px 37px 0;
+}
+
+.logo {
+    width: 56px;
+    padding-bottom: 32px;
+}
+
+.title {
+    font-size: 22px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    color: var(--gray)
+}
+
+.title__bold {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.cta {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--very-dark-blue);
+    padding-bottom: 32px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.signup__email {
+    margin-bottom: 10px;
+}
+
+.email,
+.notify {
+    padding: 10px 32px;
+    font-size: 12px;
+    border-radius: 50px;
+    border: 1px solid;
+}
+
+.email {
+    border-color: var(--pale-blue);
+    color: var(--pale-blue);
+    width: 100%;
+}
+
+.email__error {
+    border-color: red;
+}
+
+.email::placeholder {
+    color: var(--pale-blue);
+}
+
+.email:focus {
+    color: black;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 10px;
+    line-height: 2;
+    font-style: italic;
+}
+
+.error__hidden {
+    color: red;
+    font-size: 10px;
+    line-height: 2;
+    font-style: italic;
+    display: none;
+}
+
+.notify {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 5px hsl(221, 71%, 87%);
+}
+
+.notify:hover {
+    opacity: 0.8;
+}
+
+.container__mid {
+    padding: 62px 28px 120px;
+}
+
+.container__bottom {
+    width: 300px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 80px 27px;
+}
+
+.socials i {
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 20px;
+}
+
+.socials i:hover {
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    padding: 5px 8px;
+}
+
+.fa-twitter {
+    padding: 5px 5px;
+}
+
+.fa-instagram {
+    padding: 5px 6px;
+}
+
+.copyright {
+    font-size: 10px;
+    color: var(--very-dark-blue);
+}
+
+.attribution {
+    visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container__top {
+        padding: 81px 0 32px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .cta {
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+
+    .signup {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .signup__email {
+        margin: 0;
+        width: 421px;
+    }
+
+    .notify {
+        padding: 5px 0;
+        font-size: 16px;
+        height: 56px;
+        width: 200px;
+    }
+
+    .email {
+        padding: 10px 30px;
+        font-size: 16px;
+        height: 56px;
+    }
+
+    .container__mid {
+        padding-bottom: 72px;
+    }
+
+    .socials {
+        padding-bottom: 25px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
